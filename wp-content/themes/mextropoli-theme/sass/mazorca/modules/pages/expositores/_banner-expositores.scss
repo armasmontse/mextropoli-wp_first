@@ -1,0 +1,16 @@
+$col-1: 100%/12;
+
+// --- B a n n e r   e x p o s i t o r e s
+.banner-expositores {
+
+    &__box-titulo {
+        @extend %box-titulos;
+    }
+
+    &__titulo {
+        @extend %titulo-paginas;
+        @extend %titulo-paginas-inferior-derecha;
+        padding: 10px 0px 0px 10px !important;
+        word-spacing: 5px;
+    }
+}

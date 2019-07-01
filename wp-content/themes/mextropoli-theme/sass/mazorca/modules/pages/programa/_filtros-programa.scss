@@ -1,0 +1,35 @@
+$col-1: 100%/12;
+
+// --- F i l t r o s   p r o g r a m a
+.filtros-programa {
+
+    &__contenedor {
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: space-between;
+        
+        .label {
+            @extend %regular;
+            font-size: 12px;
+            color: #8C8C8C;
+        }
+
+        select {
+            width: 140px;
+            height: 25px;
+            background-color: c(grey);
+            border: none;
+
+            @extend %regular;
+            font-size: 12px;
+            color: c(black);
+            padding-left: 10px;
+        }
+    }
+
+}

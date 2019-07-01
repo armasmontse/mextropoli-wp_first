@@ -1,0 +1,17 @@
+%label {
+
+}
+
+// --- M a p a
+%filtros-mapa, .filtros-mapa {
+    @extend %regular;
+    color: c(grey);
+    font-size: 14px;
+}
+
+%filtros-label-mapa, .filtros-label-mapa {
+    @extend %light;
+    color: c(black);
+    font-size: 14px;
+    text-transform: uppercase;
+}

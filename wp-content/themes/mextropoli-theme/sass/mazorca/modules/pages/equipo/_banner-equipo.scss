@@ -1,0 +1,16 @@
+$col-1: 100%/12;
+
+// --- B a n n e r   e q u i p o
+.banner-equipo {
+
+    &__box-titulo {
+        @extend %box-titulos;
+    }
+
+    &__titulo {
+        @extend %titulo-paginas;
+        @extend %titulo-paginas-inferior-izquierda;
+        padding: 10px 10px 0px 0px !important;
+        word-spacing: 5px;
+    }
+}

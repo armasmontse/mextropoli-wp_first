@@ -1,0 +1,28 @@
+$col-1: 100%/12;
+
+// --- B a n n e r   e d i c i ó n
+.banner-edicion {
+
+    &__contenedor {
+        width:  100%;
+        padding-top: 60px;
+
+        .flex-center {
+            @extend %flex-center-titulo; 
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-paginas-simple;
+    }
+
+    &__contenido {
+        margin-top: 60px;
+        &--contenedor {
+            @extend %festival-contenido;
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto 70px;
+        }
+    }
+}

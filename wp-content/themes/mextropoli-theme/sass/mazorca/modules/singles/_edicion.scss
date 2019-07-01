@@ -1,0 +1,15 @@
+$col-1: 100%/12;
+
+// --- S i n g l e   e d i c i ó n
+.edicion {
+
+    &__contenedor {
+        width: 100%;
+    }
+}
+
+@import "edicion/_banner";
+@import "edicion/_numeralia";
+@import "edicion/_expositores";
+@import "edicion/_galeria";
+@import "edicion/_videos";

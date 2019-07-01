@@ -1,0 +1,119 @@
+$col-1: 100%/12;
+
+// ---------- F O O T E R ----------
+.footer {
+	height: 140px;
+	display: flex;
+	width: 100%;
+	background-color: c(grey);
+	@include under(sm) {
+		height: auto;
+		padding: 20px;
+
+	}
+
+	&__contenedor {
+		display: flex;
+		width: 100%;
+		@include under(sm) {
+			flex-direction: column;
+			justify-content: center;
+    		align-items: center;
+		}
+	}
+
+	// --- L o g o 
+	.logo {
+		display: flex;
+		width: 15%;
+		padding-left: 60px;
+		@include under(sm) {
+			padding: 0;
+			justify-content: center;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 40px;
+				height: 40px;;
+			}
+		}
+	}
+
+	// --- N a v
+	.nav {
+		width: 60%;
+		@include under(sm) {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.menu-footer-menu-container {
+			height: 100%;
+		}
+		
+		.lista {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: space-around;
+			@include under(sm) {
+				flex-direction: column;
+			}
+			
+			li {
+				@extend %link-header;
+				@include under(sm) {
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+
+	// --- R e d e s
+	.redes {
+		width: 23%;
+		@include under(sm) {
+			width: 100%;
+		}
+
+		&__titulo {
+			@extend %medium;
+			font-size: 14px;
+			position: absolute;
+			top: 25px;
+			right: 14%;
+			@include under(sm) {
+				display: none;
+			}
+		}
+
+		&__lista {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			margin-top: -4px;
+			
+			li {
+
+				a {
+					height: 100%;
+					display: flex;
+					margin: 0 5px;
+
+					img {
+						width: 45px;
+						height: 45px;;
+					}
+
+				}
+			}
+		}
+
+	}
+
+}

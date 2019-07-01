@@ -1,0 +1,125 @@
+$col-1: 100%/12;
+
+// --- P r e p a r a t e
+.preparate {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    @include under(md850) {
+        width: 95%;
+    }
+
+
+    .banner {
+
+        &__box-titulo {
+            @extend %box-titulos;
+        }
+    
+        &__titulo {
+            @extend %titulo-paginas;
+            @extend %titulo-paginas-superior-derecha;
+            padding: 10px 0px 0px 10px !important;
+            word-spacing: 5px;
+        }
+    }
+
+
+    .preguntas {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 50px;
+        @include under(xs600) {
+            height: auto;
+        }
+
+        &__row {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @include under(xs600) {
+                flex-direction: column;
+            }
+        }
+
+        &__card {
+            @extend %bold;
+            font-size: 22px;
+            padding: 10px;
+            
+            &.active {
+                background: yellow;
+            }
+        }
+    }
+
+    .tarjetas {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #F5F5F5;
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            padding: 10px;
+            @include under(md850) {
+                width: 32%;
+            }
+            @include under(xs600) {
+                width: 47%;
+            }
+            @include under(xs) {
+                width: 90%;
+            }
+            
+            &__titulo {
+                @extend %sede-loop-nombre;  
+                padding-bottom: 3px;
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            &__contacto {
+                @extend %preparate-sedes-cap-med;
+                padding-top: 3px;
+            }
+
+            &__telefono {
+                @extend %preparate-sedes-cap-light;
+            }
+
+            &__correo {
+                @extend %preparate-sedes-cap-light;
+                font-style: italic;
+                line-height: 16px;
+            }
+
+            &__codigo {
+                @extend %light;
+                font-size: 10px;
+                line-height: 20px;
+
+                    span {
+                        @extend %medium;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+            }
+        }
+    }
+
+    .mail-contacto {
+        @extend %regular;
+        font-size: 14px;
+        text-align: center;
+        margin: 30px 0 0;
+
+        a {
+            background-color: c(yellow);
+        }
+    }
+}

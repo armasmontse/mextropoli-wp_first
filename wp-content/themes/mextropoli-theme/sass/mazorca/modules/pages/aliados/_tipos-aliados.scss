@@ -1,0 +1,47 @@
+$col-1: 100%/12;
+
+// --- L o o p   b o l e t o s
+.tipos-aliados {
+
+    &__contenedor {
+        width: 100%;
+        height: auto;
+
+        .box-tipo {
+            margin: 0 0 40px;
+
+            .flex-center {
+                @extend %flex-center-titulo; 
+            }
+
+            &__titulo {
+                @extend %titulo-box-light;
+                margin-bottom: 60px;
+            }
+
+            .loop {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                &__card {
+                    margin: 0 15px 15px;
+                    padding: 10px;
+                    width: 18%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: auto;
+                        height: 100%;
+                        margin: 0 auto;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

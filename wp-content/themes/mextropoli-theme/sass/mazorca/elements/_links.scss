@@ -1,0 +1,15 @@
+%link {
+	cursor: pointer;
+	// text-decoration: none;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+%link-header, .link-header {
+	@extend %light;
+	font-size: 14px;
+	text-transform: uppercase;
+}

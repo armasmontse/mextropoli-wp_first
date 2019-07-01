@@ -1,0 +1,77 @@
+$col-1: 100%/12;
+
+// ---------- H O M E ----------
+.home {
+    
+    .banner-home {
+        @extend %dots-slick;
+
+        &__slider {
+
+            &--desktop {
+                display: block;
+                @include under(sm) {
+                    display: none;
+                }
+
+                .box__aspect {
+                    @extend %box-aspect-ratio;
+                    padding-bottom: 50%;
+                    &--imagen {
+                        @extend %imagen-aspect-ratio;
+                    }
+
+                    &--video {
+
+                        iframe {
+                            @extend %imagen-aspect-ratio;
+                        }
+                    }
+                }
+            }
+
+            &--mobile {
+                display: none;
+                @include under(sm) {
+                    display: block;
+                }
+
+                .box__aspect {
+                    @extend %box-aspect-ratio;
+                    padding-bottom: 152%;
+                    
+                    &.video {
+                        width: 98%;
+                        margin: 0 auto;
+                    }
+
+                    &--imagen {
+                        @extend %imagen-aspect-ratio;
+                    }
+
+                    &--video {
+
+                        iframe {
+                            @extend %imagen-aspect-ratio;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @extend %arrows-slick;
+
+    .desktop {
+        @include under(sm) {
+            display: none;
+        }
+    }
+
+    .mobile {
+        display: none;
+        @include under(sm) {
+            display: flex;
+        }
+    }
+}

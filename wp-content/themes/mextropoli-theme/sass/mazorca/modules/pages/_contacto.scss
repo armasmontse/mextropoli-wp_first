@@ -1,0 +1,117 @@
+$col-1: 100%/12;
+
+// --- C o n t a c t o
+.contacto {
+
+    &__contenedor {
+        
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        padding: 100px 0;
+
+        @include under(xs600){
+            flex-wrap: wrap;
+        }
+        
+        .col {
+            
+            &__info {
+                width: 35%;
+
+                @include under(xs600) {
+                    width: 95%;
+                    margin: 0 auto;
+                }
+                
+                .card {
+                    margin-top: 40px;
+                    label {
+                        @extend %light;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        line-height: 250%;
+                        position: relative;
+                        
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            width: 20px;
+                            height: 2px;
+                            background-color: black;
+                            bottom: 0;
+                        }
+                    }
+
+                    p {
+                        @extend %light;
+                        font-size: 18px;
+                    }
+                }
+
+            }
+
+            &__form {
+                width: 63%;
+                @include under(xs600) {
+                    width: 95%;
+                    margin: 40px auto 0;
+                }
+
+                form {
+                    
+                    h3 {
+                        @extend %titulo-paginas-simple-contacto;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 0;
+
+                        label {
+                            @extend %light;
+                            font-size: 18px;
+                            width: 90px;
+                        }
+
+                        span {
+                            span {
+                                width: 100%;
+
+                                input {
+                                    width: 100%;
+                                    height: 30px;
+                                    background-color: #D8D8D8;
+                                    @extend %light;
+                                    font-size: 18px;
+                                    
+                                    
+                                }
+                            }
+                        }
+
+                        input.wpcf7-form-control.wpcf7-submit {
+                            @extend %bold;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            width: 200px;
+                            padding-top: 17px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-paginas-simple;
+    }
+}

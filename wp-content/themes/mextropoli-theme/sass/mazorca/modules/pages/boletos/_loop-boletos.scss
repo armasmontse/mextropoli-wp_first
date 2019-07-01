@@ -1,0 +1,76 @@
+$col-1: 100%/12;
+
+// --- L o o p   b o l e t o s
+.loop-boletos {
+    margin-bottom: 50px;
+
+    &__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        width: 48%;
+        background-color: c(yellow);
+        display: flex;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        @include under(md) {
+            width: 43%;
+            margin-bottom: 40px;
+        }
+        @include under(mobile) {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        @include under(xs600) {
+            width: 94%;
+        }
+
+        .card--half {
+            width: 49%;
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-card-boletos;
+        padding: 5px 10px 2px 0;
+        word-spacing: 5px;
+    }
+    
+    &__contenido {
+        @extend %boletos-descripcion,;
+        margin: 20px 0 0 15px;
+    }
+
+    &__thumbnail {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 85%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    &__link {
+        @extend %boton-registro;
+        margin: 50px 0 0 15px;
+
+        a {
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &.mt-minus {
+            margin: 20px 0 0 15px;
+        }
+    }
+}

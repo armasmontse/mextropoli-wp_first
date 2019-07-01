@@ -1,0 +1,101 @@
+$col-1: 100%/12;
+
+// --- M o d a l
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #F6F6F6;;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__titulo {
+        @extend %bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    p {
+        @extend %bold;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    @extend %arrows-slick;
+
+    .slick-arrow {
+        width: 40px;
+    }
+
+    .galeria-prev,
+    .galeria-anterior {
+        background-image: url(../images/iconos/prev-2.svg) !important;
+    }
+
+    .galeria-next,
+    .galeria-siguiente {
+        background-image: url(../images/iconos/next-2.svg) !important;
+    }
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.open {
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+    color: gray;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-gallery {
+    height: 80vh;
+
+    .slide {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 90%;
+            object-fit: contain;
+        }
+    }
+}
+
+.slick-slide {
+    &:focus {
+        outline: 0;
+    }
+}

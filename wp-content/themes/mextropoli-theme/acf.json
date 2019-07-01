@@ -1,0 +1,1032 @@
+[
+    {
+        "key": "group_5bc643916dffd",
+        "title": "Aliados",
+        "fields": [
+            {
+                "key": "field_5bc6439db5ddb",
+                "label": "Link web aliado",
+                "name": "aliado_link",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "allies"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5bbb7c2e14194",
+        "title": "Boletos",
+        "fields": [
+            {
+                "key": "field_5bbb7c3b87350",
+                "label": "Link registro (mail)",
+                "name": "link_compra",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5bc8a6645918d",
+                "label": "Copy botón registro (mail)",
+                "name": "link_compra-copy",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5bd8c6d9358c1",
+                "label": "Segundo botón (opcional)",
+                "name": "segundo_boton",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Agregar segundo botón",
+                "sub_fields": [
+                    {
+                        "key": "field_5bd8c731358c2",
+                        "label": "Info botón dinámico (URL)",
+                        "name": "segundo_boton_grupo",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5bd8c75a358c3",
+                                "label": "Link de compra",
+                                "name": "link_compra_dinamico",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5bd8c775358c4",
+                                "label": "Copy botón",
+                                "name": "link_compra_copy_dinamico",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "tickets"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5bb7bd95824fa",
+        "title": "Detalles Ediciones",
+        "fields": [
+            {
+                "key": "field_5bb7bdaf4a525",
+                "label": "Numeralia",
+                "name": "numeralia",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Agregar info",
+                "sub_fields": [
+                    {
+                        "key": "field_5bb7bf0cbbe42",
+                        "label": "Total",
+                        "name": "total",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_5bb7bf1bbbe43",
+                        "label": "Descripción",
+                        "name": "descripcion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5bc10a77804ef",
+                "label": "Galeria",
+                "name": "galeria",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5bc10ab7a757d",
+                "label": "Videos",
+                "name": "videos",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Agregar video",
+                "sub_fields": [
+                    {
+                        "key": "field_5bc10ac6a757e",
+                        "label": "Link videos",
+                        "name": "link_videos",
+                        "type": "oembed",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "width": "",
+                        "height": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "edition"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5c1bcafe72b76",
+        "title": "Detalles Evento",
+        "fields": [
+            {
+                "key": "field_5c1bcb0599910",
+                "label": "Expositor",
+                "name": "event_speaker",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "edition_speaker"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": [
+                    "featured_image"
+                ],
+                "min": 1,
+                "max": "",
+                "return_format": "id"
+            },
+            {
+                "key": "field_5c1bcb7899911",
+                "label": "Sede",
+                "name": "venue_id",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "venues"
+                ],
+                "taxonomy": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_5c1bd73ea5e9e",
+                "label": "Fecha",
+                "name": "date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_5c1bd768a5e9f",
+                "label": "Horario",
+                "name": "time",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "00:00 - 00:00",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c1bd7dea5ea0",
+                "label": "Tipo de boleto",
+                "name": "ticket_id",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "tickets"
+                ],
+                "taxonomy": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_5c1bd858a5ea1",
+                "label": "Precio",
+                "name": "price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "0.0",
+                "prepend": "$",
+                "append": "",
+                "min": 0,
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5c1bd9f3bc4e5",
+                "label": "URL",
+                "name": "url",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "event"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5beb61d257656",
+        "title": "Detalles Expositores",
+        "fields": [
+            {
+                "key": "field_5bec84c002d32",
+                "label": "Descripción expositor",
+                "name": "descripcion_expositor",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5beb620e9ab90",
+                "label": "Reconocimientos expositor",
+                "name": "reconocimientos_expositor",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5beb62249ab91",
+                "label": "Empresa expositor",
+                "name": "empresa_expositor",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5beb625f9ab92",
+                "label": "Link web expositor",
+                "name": "link_web_expositor",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5beb62799ab93",
+                "label": "Galería expositor",
+                "name": "galeria_expositor",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "edition_speaker"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5c1bdd2a635e3",
+        "title": "Detalles Sede",
+        "fields": [
+            {
+                "key": "field_5c1bf3d5e07a7",
+                "label": "Dirección",
+                "name": "address",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_5c1bdd33166e1",
+                "label": "Coordenadas",
+                "name": "coordinates",
+                "type": "text",
+                "instructions": "Ingresa las coordenadas del lugar en la forma lat,long",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "19.4312304,-99.1544297",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "venues"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5c1c391dcb96a",
+        "title": "Detalles tipo de sede",
+        "fields": [
+            {
+                "key": "field_5c1c399d0ddeb",
+                "label": "Color",
+                "name": "color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FFFFFF"
+            },
+            {
+                "key": "field_5c1c3daf2c1f1",
+                "label": "Orden",
+                "name": "order",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": "",
+                "step": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "venues_typology"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5bc656b98bf61",
+        "title": "Equipo",
+        "fields": [
+            {
+                "key": "field_5bc656c501f3e",
+                "label": "Areas",
+                "name": "equipo_areas",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Agregar area",
+                "sub_fields": [
+                    {
+                        "key": "field_5bc6571101f3f",
+                        "label": "Información áreas",
+                        "name": "area_info_grupo",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5bc658a553e97",
+                                "label": "Descripción Area",
+                                "name": "area_descripcion",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5bc658c253e98",
+                                "label": "Mail",
+                                "name": "area_mail",
+                                "type": "email",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_5bc6579b01f40",
+                                "label": "Información por area",
+                                "name": "informacion_por_area",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "",
+                                "min": 0,
+                                "max": 0,
+                                "layout": "table",
+                                "button_label": "Agregar integrante",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5bc657c601f41",
+                                        "label": "Nombre",
+                                        "name": "area_integrante_nombre",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5bc659e0368d1",
+                "label": "Mail Información",
+                "name": "equipo_info_mail",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "61"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5bbb8cececab9",
+        "title": "Slider Home",
+        "fields": [
+            {
+                "key": "field_5bbb8d031c7d0",
+                "label": "Contenido slider",
+                "name": "contenido_slider",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "5bbb8d2e6186c": {
+                        "key": "5bbb8d2e6186c",
+                        "name": "imagenes",
+                        "label": "Imagenes",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5bbb8d4d1c7d2",
+                                "label": "Imagenes",
+                                "name": "imagenes",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5bbb8d691c7d3",
+                                        "label": "Desktop",
+                                        "name": "desktop",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "full",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_5bbb8d7b1c7d4",
+                                        "label": "Móvil",
+                                        "name": "movil",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "full",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5bbb8d3a1c7d1": {
+                        "key": "5bbb8d3a1c7d1",
+                        "name": "video",
+                        "label": "Video",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5bbb8da61c7d5",
+                                "label": "Video",
+                                "name": "video",
+                                "type": "oembed",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "width": "",
+                                "height": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Agregar elemento",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "5"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

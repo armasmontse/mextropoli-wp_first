@@ -1,0 +1,82 @@
+$col-1: 100%/12;
+
+// --- L o o p   e d i c i o n e s
+.loop-ediciones {
+    padding-bottom: 40px;
+
+    &__contenedor {
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        @include under(md) {
+            padding: 0 40px;
+        }
+        @include under(mobile) {
+            padding: 0 20px;
+        }
+        
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+    }
+    
+    &__page{
+        @extend %titulo-paginas-simple;
+    }
+
+    &__card {
+        display: flex;
+        margin-bottom: 25px;
+        @include under(mobile) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-20 {
+            width: 220px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @extend %titulo-festival-edicion;
+            background-position: center;
+            // filter: grayscale(100%);
+
+            h4 {
+                margin-top: 19px;
+            }
+        }
+
+        .card-80 {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 30px;
+            @include under(mobile) {
+                width: 95%;
+                margin: 20px auto;
+                padding: 0;
+            }
+        }
+    }
+
+    &__titulo {
+        
+    }
+
+    &__contenido {
+        @extend %festival-contenido;
+    }
+
+    &__link {
+        @extend %boton-festival-ediciones;
+        @include under(mobile) {
+            margin-top: 15px;
+        }        
+    }
+}

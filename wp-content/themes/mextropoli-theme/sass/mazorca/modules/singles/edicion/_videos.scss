@@ -1,0 +1,50 @@
+$col-1: 100%/12;
+
+// --- V i d e o s
+.videos {
+
+    &__contenedor {
+        width:  100%;
+        margin-bottom: 50px;
+
+        .flex-center {
+            @extend %flex-center-titulo; 
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-paginas-simple;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 60px;
+
+        .card{
+            width: 23%;
+
+            @include under(md) {
+                width: 30%;
+            }
+            @include under(sm) {
+                width: 45%;
+            }
+            @include under(xs600) {
+                width: 80%;
+            }
+        }
+
+        .box-aspect {
+            @extend %box-aspect-ratio;
+            padding-bottom: 73%;
+            margin-bottom: 25px;
+
+            iframe {
+                @extend %imagen-aspect-ratio; 
+
+            }
+        }
+    }
+}

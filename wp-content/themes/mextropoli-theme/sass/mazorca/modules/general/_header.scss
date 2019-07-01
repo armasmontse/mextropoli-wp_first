@@ -1,0 +1,231 @@
+$col-1: 100%/12;
+
+// ---------- H E A D E R ----------
+.header {
+	height: 60px;
+	display: flex;
+	width: 100%;
+
+	// --- L o g o 
+	.logo {
+		display: flex;
+		width: 33%;
+		padding-left: 60px;
+		@include under(sm) {
+			padding-left: 0px;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 40px;
+				height: 40px;;
+			}
+		}
+	}
+
+	// --- M e n ú
+	.menu {
+		width: 53%;
+		@include under(sm) {
+			display: none;
+		}
+
+		&-header-menu-container {
+			height: 100%;
+		}
+		
+		.lista {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: space-around;
+			
+			li {
+				@extend %link-header;
+			}
+		}
+
+		.menu-item-has-children {
+			height: 100%;
+			align-items: center;
+			display: flex;
+			position: relative;
+			
+			&::after {
+				content: url(../images/iconos/arrow-bottom.svg);
+				width: 10px;
+				position: absolute;
+				right: -13px !important;
+				top: 21px;
+			}
+
+			&:hover .sub-menu{
+				display: block;
+			}
+
+			.sub-menu {
+
+				.current-menu-item {
+					font-weight: bold;
+				}
+			}
+		}
+
+		.sub-menu {
+			display: none;
+			height: auto;
+			background: c(white);
+			position: absolute;
+			top: 60px;
+			font-weight: normal;
+			z-index: 2;
+			width: 105px;
+
+			.menu-item {
+				&:first-child {
+					&::before {
+						content: "";
+					}
+				}
+			}
+
+			li {
+				padding: 10px;
+				&:hover {
+					background: c(grey);
+					cursor: pointer;
+				}
+				a {
+					display: flex;
+				}
+			}
+		}
+	}
+
+	// --- R e d e s
+	.redes {
+		width: 12%;
+		@include under(sm) {
+			width: 57%;
+		}
+		@include under(mobile) {
+			width: 50%;
+		}
+		@include under(xs) {
+			width: 42%;
+		}
+
+		&__lista {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			margin-top: -4px;
+			@include under(sm) {
+				justify-content: flex-end;
+			}
+			
+			li {
+
+				a {
+					height: 100%;
+					display: flex;
+					margin: 0 5px;
+
+					img {
+						width: 25px;
+						height: 25px;;
+					}
+				}
+			}
+		}
+	}
+
+	// --- B o t o n e s   r e s p o n s i v e
+	.botones-responsive {
+		display: none;
+		@include under(sm) {
+			display: flex;
+		}
+
+		button {
+			@extend %boton-menu-responsive;
+		}
+
+		.open {
+
+		}
+
+		.close {
+			display: none;
+			@include under(sm) {
+				position: absolute;
+				top: 14px;
+				right: 55px;
+			}	
+		}
+	}
+
+	// --- M e n ú   m o b i l e
+	.menu-mobile{
+		display: none;
+		@include under(sm) {
+			background: c(white);
+			width: 100%;
+			position: absolute;
+			top: 60px;
+			z-index: 1;
+			height: 50vh;
+
+			.menu-item-has-children {
+				
+				@include under(sm) {
+					a:first-child {
+						position: relative;
+
+						&::after {
+							content: url(../images/iconos/arrow-bottom.svg);
+							width: 15px;
+							position: absolute;
+							// right: -13px !important;
+							// top: 21px;
+						}
+						
+					}
+					
+				}
+
+				.sub-menu {
+					text-align: center;
+					margin-top: 5px;
+					a:first-child {
+						text-align: center;
+						&::after {
+							content: "";
+						}
+					}
+					a {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+
+		.lista {
+			@include under(sm) {
+				height: 100%;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	
+		li {
+			@extend %link-header;
+		}
+	}
+}

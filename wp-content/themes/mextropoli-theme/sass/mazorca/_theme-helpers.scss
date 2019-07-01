@@ -1,0 +1,188 @@
+/* ---------- A s p e c t   r a t i o ---------- */
+%box-aspect-ratio {
+    position: relative;
+    width: 100%;
+    // background-color: whitesmoke;
+}
+
+%imagen-aspect-ratio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+}
+
+/* ---------- F l e x   c e n t e r ---------- */
+%flex-center-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-center-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+/* C o n t e n e d o r */
+
+/* ---------- W y s i w y g ---------- */
+%contenido-wysiwyg {
+
+    a {
+        text-decoration: underline;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    ul {
+        margin-left: 20px;
+
+        li {
+            &::before {
+                content: "\2022";
+                margin: 0 10px;
+            }
+        }
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin-left: 50px;
+        li {
+
+        }
+    }
+
+    del {
+        text-decoration: underline;
+    }
+
+    p {
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        del {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* ---------- Contenedor títulos ---------- */
+%box-titulos {
+    background-color: c(yellow);
+    width: 620px;
+    height: 180px;
+    margin: 80px auto 70px;
+    position: relative;
+}
+
+%titulo-paginas-inferior-derecha {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+%titulo-paginas-inferior-izquierda {
+    @extend %titulo-paginas-inferior-derecha;
+    right: inherit;
+    left: 0;
+}
+
+%titulo-paginas-superior-derecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ---------- S l i c k   s l i d e r ---------- */
+%dots-slick {
+    ul.slick-dots {
+        display: flex;
+        justify-content: center;
+        bottom: 10px;
+        position: absolute;
+        width: 100%;
+
+        li button {
+            margin: 10px;
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: .5px solid black;
+            border-radius: 10px;
+            background: transparent;
+        }
+    }
+
+    .slick-active button {
+        border: 0.5px solid c(yellow) !important;
+        background: c(yellow) !important;
+    }
+
+    .slick-initialized .slick-slide {
+        outline: none;
+    }
+}
+
+%arrows-slick {
+    .slick-arrow {
+        width: 15px;
+        height: 35px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .galeria-prev,
+    .galeria-anterior {
+        background-image: url(../images/iconos/prev-slide.svg) !important;
+        left: 3%;
+        @include under(mobile) {
+            left: 2%;
+        }
+    }
+    
+    .galeria-next,
+    .galeria-siguiente {
+        background-image: url(../images/iconos/next-slide.svg) !important;
+        left: 96%;
+        @include under(mobile) {
+            left: 94%;
+        }
+    }
+}
+
+/* ---------- M o d a l   s l i c k ---------- */
+%modal-gallery {
+    height: 80vh;
+
+    .slide {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 90%;
+            object-fit: contain;
+        }
+    }    
+}

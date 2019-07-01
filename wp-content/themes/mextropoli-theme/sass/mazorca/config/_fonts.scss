@@ -1,0 +1,25 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+// declara-font-face($font-family, $font-filename, $font-weight: normal, $font-style: normal, $font-stretch: normal)
+
+// Zona Paz
+@include declara-font-face(FoundersGrotesk,  '../fonts/Grotesk/FoundersGrotesk-Light', 300);
+@include declara-font-face(FoundersGrotesk, '../fonts/Grotesk/FoundersGrotesk-Regular', 400);
+@include declara-font-face(FoundersGrotesk, '../fonts/Grotesk/FoundersGrotesk-Medium', 600);
+@include declara-font-face(FoundersGrotesk,   '../fonts/Grotesk/FoundersGrotesk-Bold', 700);
+
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+$fonts:(
+	founders: 	('FoundersGrotesk', sans-serif),
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

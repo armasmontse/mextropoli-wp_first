@@ -1,0 +1,48 @@
+$col-1: 100%/12;
+
+// --- L o o p   e q u i p o
+.loop-equipo {
+    
+    &__contenedor {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include under(mobile) {
+            width: 95%;
+        }
+    }
+
+    &__card {
+        width: 33%;
+        margin-bottom: 30px;
+        @include under(xs600) {
+            width: 49%;
+        }
+    }
+
+    &__nombre {
+        @extend %nombres-equipo;
+    }
+
+    &__descripcion {
+        @extend %area-equipo;
+    }
+
+    &__mail {
+        @extend %mail-equipo;
+    }
+
+    &__info {
+
+        &-titulo {
+            @extend %titulo-info-equipo;
+        }
+
+        &-mail {
+            @extend %mail-equipo;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+$col-1: 100%/12;
+
+// --- N u m e r a l i a
+.numeralia {
+
+    &__contenedor {
+        width:  100%;
+        margin-bottom: 50px;
+
+        .flex-center {
+            @extend %flex-center-titulo; 
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-paginas-simple;
+    }
+
+    // Cards
+
+    .cards {
+
+        &__contenedor {
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+        }
+        
+        &__lista {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+                        
+            .card {
+                width: 21%;
+                min-width: 200px;
+                height: 200px;
+                background-color: c(yellow);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                &-numero {
+                    @extend %bold;
+                    font-size: 64px;
+                }
+
+                &-texto {
+                    @extend %light;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

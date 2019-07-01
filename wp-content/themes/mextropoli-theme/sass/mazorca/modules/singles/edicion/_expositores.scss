@@ -1,0 +1,19 @@
+$col-1: 100%/12;
+
+// --- E x p o s i t o r e s
+.expositores {
+
+    &__contenedor {
+        width:  100%;
+        margin-bottom: 50px;
+
+        .flex-center {
+            @extend %flex-center-titulo; 
+        }
+    }
+
+    &__titulo {
+        @extend %titulo-paginas-simple;
+    }
+
+}

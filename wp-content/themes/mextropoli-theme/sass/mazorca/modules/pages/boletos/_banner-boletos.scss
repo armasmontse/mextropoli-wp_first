@@ -1,0 +1,15 @@
+$col-1: 100%/12;
+
+// --- B a n n e r   b o l e t o s
+.banner-boletos {
+
+    &__box-titulo {
+        @extend %box-titulos;
+    }
+
+    &__titulo {
+        @extend %titulo-paginas;
+        padding: 0px 10px 2px 0;
+        word-spacing: 5px;
+    }
+}

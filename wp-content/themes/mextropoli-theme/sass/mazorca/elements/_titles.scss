@@ -1,0 +1,72 @@
+%title {
+	
+}
+
+// --- P Á G I N A S 
+%titulo-paginas, .titulo-paginas {
+    @extend %medium;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: c(white);
+    display: inline;
+    @include under(mobile) {
+        font-size: 34px;
+    }
+}
+
+%titulo-paginas-simple, .titulo-paginas-simple {
+    @extend %bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: c(yellow);
+    display: inline;
+    color: c(black);
+    padding: 10px 10px 5px;
+}
+
+%titulo-paginas-simple-contacto, .titulo-paginas-simple-contacto {
+    @extend %titulo-paginas-simple;
+    background-color: c(white);
+    padding: 0px;
+    text-transform: inherit;
+    letter-spacing: 1px;
+}
+
+%titulo-box-light {
+    @extend %light;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: c(yellow);
+    display: inline;
+    color: c(black);
+    padding: 10px 10px 5px;
+}
+
+// --- B o l e t o s
+%titulo-card-boletos, .titulo-card-boletos {
+    @extend %medium;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: c(white);
+    display: inline;
+}
+
+// --- F e s t i v a l
+%titulo-festival-edicion, .titulo-festival-edicion {
+    @extend %bold;
+    font-size: 46px;
+    color: c(white);
+}
+
+// --- Expositores
+%expositores-nombre, .expositores-nombre {
+    @extend %medium;
+    font-size: 24px;
+    color: c(black);
+    background-color: c(white);
+}
+%expositores-nombre-modal, .expositores-nombre-modal {
+    @extend %bold;
+    font-size: 24px;
+    color: c(black);
+}

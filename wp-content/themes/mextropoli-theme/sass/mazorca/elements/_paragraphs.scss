@@ -1,0 +1,91 @@
+%paragraph {
+
+}
+
+%light {
+    font-family: f(founders);
+    font-weight: 300;
+}
+
+%regular {
+    font-family: f(founders);
+    font-weight: 400;
+}
+
+%medium {
+    font-family: f(founders);
+    font-weight: 600;
+}
+
+%bold {
+    font-family: f(founders);
+    font-weight: 700;
+}
+
+%fs14-lh20, .fs14-lh20 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+// --- B o l e t o s
+%boletos-descripcion, .boletos-descripcion {
+    @extend %light;
+    @extend %fs14-lh20;
+}
+
+// --- F e s t i v a l 
+%festival-contenido, .festival-contenido {
+    @extend %light;
+    @extend %fs14-lh20;
+    @extend %contenido-wysiwyg;
+}
+
+// --- E q u i p o
+%nombres-equipo, .nombres-equipo {
+    @extend %medium;
+    @extend %fs14-lh20;
+}
+%area-equipo, .area-equipo {
+    @extend %light;
+    @extend %fs14-lh20;    
+}
+%mail-equipo, .mail-equipo {
+    @extend %light;
+    @extend %fs14-lh20;    
+    color: #737373;
+}
+%titulo-info-equipo, .titulo-info-equipo {
+    @extend %nombres-equipo;
+    text-transform: uppercase;
+}
+
+// --- E x p o s i t o r e s
+%expositores-premio-italic-modal, .expositores-premio-italic-modal {
+    @extend %light;
+    font-size: 18px;
+    color: c(black);
+    font-style: italic;
+}
+%expositores-premio-modal, .expositores-premio-modal {
+    @extend %light;
+    font-size: 18px;
+    color: c(black);
+}
+
+%sede-loop-nombre, .sede-loop-nombre {
+    @extend %medium;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+%preparate-sedes-cap-med, .preparate-sedes-cap-med {
+    @extend %medium;
+    font-size: 12px;
+    line-height: 20px; 
+}
+
+%preparate-sedes-cap-light, .preparate-sedes-cap-light {
+    @extend %light;
+    font-size: 12px;
+    line-height: 20px; 
+}
